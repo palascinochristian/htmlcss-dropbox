@@ -11,6 +11,12 @@
     min-height: 200px;
 }
 
+.debug .col-title {
+    border: 2px dashed lightcoral;
+    background-color: rgba(240, 128, 128, 0.2);
+
+}
+
 .debug .hero {
     min-height: 700px;
 }
@@ -70,11 +76,26 @@
     flex-grow: 1;
 }
 
+hr {
+    border: 1px solid;
+    color: #F5F5F5;
+    margin: 150px 0 50px 0;
+}
+
+hr.small {
+    border: 1px solid;
+    color: #D0CFD4;
+    width: 20%;
+    margin: 0;
+}
+
+
 /*----------------
     TYPOGRAPHY
 ------------------*/
 body {
     font-family: "Open Sans", sans-serif;
+    font-weight: 500;
 }
 
 .hero h1 {
@@ -82,6 +103,19 @@ body {
     font-weight: 800;
     padding: 0 0 50px 0;
 }
+
+
+.business-plan h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+
+}
+
+
+.business-plan h3 {
+    font-size: 25px;
+}
+
 
 /*----------------
     BUTTONS
@@ -150,6 +184,9 @@ header .logo {
 /*----------------
     MAIN
 ------------------*/
+
+
+/* PAGE HERO  */
 .hero {
     display: flex;
     background-color: #B4D0E6;
@@ -159,12 +196,7 @@ header .logo {
     position: relative;
     left: 0;
     top: 75px;
-
 }
-
-/* .hero .row {
-    gap: 10px;
-} */
 
 .hero .col.col-medium {
     max-width: 31%;
@@ -188,25 +220,105 @@ header .logo {
     left: 0;
 }
 
+/* /PAGE HERO  */
+
+.container .radio {
+    display: flex;
+    gap: 5px;
+}
 
 
+.radio p {
+    margin-right: 40px;
+}
+
+.col-title {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+.business-plan .col-title,
+.business-plan .col,
+.business-plan .col-bigger {
+    width: 100%;
+    border: 1px solid #D0CFD4;
+}
+
+.business-plan .row {
+    gap: 40px;
+}
+
+.row.title-row {
+    margin-top: 55px;
+    gap: 40px;
+
+}
+
+.business-plan .col {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    border-top: none;
+    gap: 40px;
+    position: relative;
+}
+
+.business-plan .col-bigger {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 30px;
+    border-top: none;
+    /* gap: 80px; */
+    justify-content: space-between;
+
+}
+
+.business-plan .col-big {
+    max-width: calc(80% - 80px);
+}
+
+.business-plan .col-medium {
+    max-width: calc(20% + 80px);
+    text-align: right;
+}
+
+.plan-type {
+    display: inherit;
+    flex-direction: inherit;
+    gap: 10px;
+}
 
 
+.plan-type p {
+    color: #6D6F6E;
+}
 
 
+.business-plan ul {
+    padding-left: 15px;
+}
+
+.business-plan li {
+    list-style: none;
+    padding-bottom: 30px;
+    list-style-position: outside;
+    position: relative;
+}
 
 
+.business-plan li i {
+    position: absolute;
+    left: -22px;
+    top: 2px;
+}
 
+.fa-check {
+    color: #0061FE;
+    font-size: 18px;
+}
 
-
-
-
-
-
-
-
-
-
-/*----------------
-    FOOTER
-------------------*/
+.col-bigger p {
+    margin-top: 40px;
+}
