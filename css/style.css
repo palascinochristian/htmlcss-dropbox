@@ -143,6 +143,9 @@ body {
     color: #fff;
 }
 
+.btn-secondary{
+    border: 1px solid #000;
+}
 /*----------------
     HEADER
 ------------------*/
@@ -325,4 +328,22 @@ header .logo {
 
 .col-bigger h4 {
     padding-top: 20px;
+}
+
+.find-partner .row{
+    margin-top:150px;
+    gap: 40px;
+}
+.find-partner .col-medium{
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+.find-partner .col-big{
+    max-width: 65%;
+}
+.find-partner .btn{
+    width: 50%;
 }
