@@ -322,3 +322,7 @@ header .logo {
 .col-bigger p {
     margin-top: 40px;
 }
+
+.col-bigger h4 {
+    padding-top: 20px;
+}
