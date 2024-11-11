@@ -132,6 +132,7 @@ h2 {
     padding: 6px 15px;
     cursor: pointer;
     font-size: inherit;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .btn-large {
@@ -148,8 +149,16 @@ h2 {
     color: #fff;
 }
 
+.btn-primary:hover {
+    background-color: #3280FE;
+}
+
 .btn-secondary {
     border: 1px solid #000;
+}
+
+.btn-secondary:hover {
+    background-color: #F5F5F5;
 }
 
 /*----------------
